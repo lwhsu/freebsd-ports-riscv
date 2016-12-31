@@ -22,7 +22,7 @@ GH_ACCOUNT=	freebsd-riscv
 GH_PROJECT=	riscv-gcc
 GH_TAGNAME=	095b1d6
 
-USES=	iconv gmake libtool makeinfo
+USES=	gmake iconv libtool makeinfo
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--target=riscv64-unknown-${OPSYS:tl}${OSREL} \
