@@ -1,0 +1,5 @@
+RISC-V Frontend Server
+
+This repository contains the front-end server library, which facilitates
+communication between a host machine and a RISC-V target machine. It is usually
+not meant to be used as a standalone package.
