@@ -37,6 +37,11 @@ STRIP_FILES=	bin/spike \
 post-extract:
 	@${MV} ${WRKSRC}/riscv/insn_template.h ${WRKSRC}/riscv/insn_template.hpp
 
+post-patch:
+	${REINPLACE_CMD} -e \
+	's|[(]install_libs_dir[)]/pkgconfig|(INSTALLDIR)/libdata/pkgconfig|g' \
+	${WRKSRC}/Makefile.in
+
 post-install:
 .	for f in ${STRIP_FILES}
 		${STRIP_CMD} ${STAGEDIR}${PREFIX}/${f}
