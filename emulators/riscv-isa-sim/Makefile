@@ -9,17 +9,17 @@ MAINTAINER=	lwhsu@FreeBSD.org
 COMMENT=	Spike, a RISC-V ISA Simulator
 
 LICENSE=	BSD3CLAUSE
-LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libfesvr.so:emulators/riscv-fesvr
 
-USE_GITHUB=	yes
 GH_ACCOUNT=	freebsd-riscv
 GH_TAGNAME=	11ec3a3
 
 USES=	compiler:c++11-lang gmake pathfix shebangfix
+
 HAS_CONFIGURE=	yes
 SHEBANG_FILES=	scripts/vcs-version.sh
+USE_GITHUB=	yes
 USE_LDCONFIG=	yes
 
 LDFLAGS+=	-L${LOCALBASE}/lib
