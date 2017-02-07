@@ -1,5 +1,6 @@
-RISC-V Frontend Server
+Spike, a RISC-V ISA Simulator
 
-This repository contains the front-end server library, which facilitates
-communication between a host machine and a RISC-V target machine. It is usually
-not meant to be used as a standalone package.
+The RISC-V ISA Simulator implements a functional model of one or more RISC-V
+processors.
+
+WWW: https://github.com/freebsd-riscv/riscv-isa-sim

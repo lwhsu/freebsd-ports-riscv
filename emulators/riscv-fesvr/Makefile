@@ -19,7 +19,8 @@ USES=	gmake
 HAS_CONFIGURE=	yes
 USE_LDCONFIG=	yes
 
-.include <bsd.port.pre.mk>
+STRIP_FILES=	bin/elf2hex \
+		lib/libfesvr.so
 
 post-patch:
 	${REINPLACE_CMD} -e \
@@ -27,7 +28,8 @@ post-patch:
 	${WRKSRC}/Makefile.in
 
 post-install:
-	${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/libfesvr.so
-	${STRIP_CMD} ${STAGEDIR}${PREFIX}/bin/elf2hex
+.	for f in ${STRIP_FILES}
+		${STRIP_CMD} ${STAGEDIR}${PREFIX}/${f}
+.	endfor
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

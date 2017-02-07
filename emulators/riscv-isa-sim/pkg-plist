@@ -33,7 +33,7 @@ lib/libdummy_rocc.so
 lib/libriscv.so
 lib/libsoftfloat.so
 lib/libspike_main.so
-lib/pkgconfig/riscv-dummy_rocc.pc
-lib/pkgconfig/riscv-riscv.pc
-lib/pkgconfig/riscv-softfloat.pc
-lib/pkgconfig/riscv-spike_main.pc
+libdata/pkgconfig/riscv-dummy_rocc.pc
+libdata/pkgconfig/riscv-riscv.pc
+libdata/pkgconfig/riscv-softfloat.pc
+libdata/pkgconfig/riscv-spike_main.pc
