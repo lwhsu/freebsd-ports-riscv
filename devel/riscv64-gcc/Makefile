@@ -1,7 +1,7 @@
 # $FreeBSD: head/devel/riscv64-gcc/Makefile 439595 2017-04-28 04:36:40Z linimon $
 
 PORTNAME=	gcc
-PORTVERSION=	7.1.0
+PORTVERSION=	7.1.1
 CATEGORIES=	devel
 PKGNAMEPREFIX=	riscv64-
 
