@@ -42,7 +42,6 @@ riscv64-freebsd/bin/objcopy
 riscv64-freebsd/bin/objdump
 riscv64-freebsd/bin/ranlib
 riscv64-freebsd/bin/readelf
-riscv64-freebsd/bin/size
 riscv64-freebsd/bin/strip
 riscv64-freebsd/lib/ldscripts/elf32lriscv.x
 riscv64-freebsd/lib/ldscripts/elf32lriscv.xbn
