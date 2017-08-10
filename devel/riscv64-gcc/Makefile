@@ -24,7 +24,7 @@ GH_TAGNAME=	b2cdb72
 
 USES=	iconv gmake libtool makeinfo
 
-GCC_TARGET=	${PKGNAMEPREFIX}unknown-${OPSYS:tl}${OSREL}
+GCC_TARGET=	${PKGNAMEPREFIX}unknown-${OPSYS:tl}
 
 GNU_CONFIGURE=	yes
 CONFIGURE_OUTSOURCE=	yes
@@ -34,8 +34,8 @@ CONFIGURE_ARGS=	--target=${GCC_TARGET} \
 		--without-headers \
 		--with-pkgversion="FreeBSD Ports Collection for ${PKGNAMEPREFIX:C/-//g}" \
 		--with-system-zlib \
-		--with-as=${LOCALBASE}/bin/${PKGNAMEPREFIX}freebsd-as \
-		--with-ld=${LOCALBASE}/bin/${PKGNAMEPREFIX}freebsd-ld \
+		--with-as=${LOCALBASE}/bin/${PKGNAMEPREFIX}unknown-freebsd-as \
+		--with-ld=${LOCALBASE}/bin/${PKGNAMEPREFIX}unknown-freebsd-ld \
 		--disable-werror \
 		--disable-shared \
 		--enable-threads \
