@@ -23,7 +23,7 @@ GH_TAGNAME=	ba0b7ff
 USES=	bison gmake libtool makeinfo
 
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	--target=${PKGNAMEPREFIX}unknown-${OPSYS:tl} \
+CONFIGURE_ARGS=	--target=${PKGNAMEPREFIX}${OPSYS:tl} \
 		--with-sysroot=/ \
 		--disable-gdb \
 		--disable-sim \
