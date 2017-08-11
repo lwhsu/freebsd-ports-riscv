@@ -34,8 +34,8 @@ CONFIGURE_ARGS=	--target=${GCC_TARGET} \
 		--without-headers \
 		--with-pkgversion="FreeBSD Ports Collection for ${PKGNAMEPREFIX:C/-//g}" \
 		--with-system-zlib \
-		--with-as=${LOCALBASE}/bin/${PKGNAMEPREFIX}unknown-freebsd11.0-as \
-		--with-ld=${LOCALBASE}/bin/${PKGNAMEPREFIX}unknown-freebsd11.0-ld \
+		--with-as=${LOCALBASE}/bin/${PKGNAMEPREFIX}freebsd-as \
+		--with-ld=${LOCALBASE}/bin/${PKGNAMEPREFIX}freebsd-ld \
 		--disable-werror \
 		--disable-shared \
 		--enable-threads \
