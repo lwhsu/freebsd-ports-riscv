@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/riscv64-binutils/Makefile 430532 2017-01-04 02:49:23Z lwhsu $
+# $FreeBSD: head/devel/riscv64-binutils/Makefile 447779 2017-08-11 17:33:06Z lwhsu $
 
 PORTNAME=	binutils
 PORTVERSION=	2.29.51.20170726
@@ -15,15 +15,15 @@ LIB_DEPENDS=	libgmp.so:math/gmp \
 		libmpfr.so:math/mpfr \
 		libmpc.so:math/mpc
 
+USES=	bison gmake libtool makeinfo
+
 USE_GITHUB=	yes
 GH_ACCOUNT=	freebsd-riscv
 GH_PROJECT=	riscv-binutils-gdb
 GH_TAGNAME=	ba0b7ff
 
-USES=	bison gmake libtool makeinfo
-
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	--target=${PKGNAMEPREFIX}${OPSYS:tl} \
+CONFIGURE_ARGS=	--target=${PKGNAMEPREFIX}unknown-${OPSYS:tl} \
 		--with-sysroot=/ \
 		--disable-gdb \
 		--disable-sim \
