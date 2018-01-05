@@ -1,7 +1,9 @@
 # $FreeBSD: head/devel/riscv64-binutils/Makefile 447779 2017-08-11 17:33:06Z lwhsu $
 
 PORTNAME=	binutils
-PORTVERSION=	2.29.51.20170726
+PORTVERSION=	2.29
+PORTREVISION=	20180105
+PORTEPOCH=	1
 CATEGORIES=	devel
 PKGNAMEPREFIX=	riscv64-
 
@@ -20,10 +22,10 @@ USES=	bison gmake libtool makeinfo
 USE_GITHUB=	yes
 GH_ACCOUNT=	freebsd-riscv
 GH_PROJECT=	riscv-binutils-gdb
-GH_TAGNAME=	ba0b7ff
+GH_TAGNAME=	dc03ed3
 
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	--target=${PKGNAMEPREFIX}unknown-${OPSYS:tl} \
+CONFIGURE_ARGS=	--target=${PKGNAMEPREFIX}${OPSYS:tl} \
 		--with-sysroot=/ \
 		--disable-gdb \
 		--disable-sim \
